@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    tools:context=".PhoneAuth">
+
+
+    <TextView
+        android:id="@+id/OtpVer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Otp Verification"
+        android:textSize="36dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        />
+
+    <TextView
+        android:id="@+id/EnterMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/OtpVer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:text="Enter Mobile Number"
+        android:textSize="30dp"
+        android:textStyle="italic"
+
+        />
+
+    <TextView
+        android:id="@+id/WillSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EnterMobile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="We will Send you a Otp Message"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#B2BEC5"
+        />
+
+    <EditText
+        android:id="@+id/PhoneNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:hint="   Phone Number"
+        android:background="@drawable/shape_button01"
+        android:drawableLeft="@drawable/baseline_phone_24"
+        android:inputType="textPhonetic"
+        android:textColor="#111112"
+        android:textSize="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="150dp"
+        android:padding="8dp"
+        />
+
+   <com.google.android.material.button.MaterialButton
+       android:id="@+id/SubmitBtn"
+       android:layout_width="300dp"
+       android:layout_height="60dp"
+       android:layout_alignParentBottom="true"
+       android:layout_centerHorizontal="true"
+       android:layout_marginBottom="80dp"
+       app:cornerRadius="80dp"
+       android:text="Submit"
+       android:textColor="@color/white"
+       android:textSize="20dp"
+       />
+
+
+</RelativeLayout>

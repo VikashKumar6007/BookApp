@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    tools:context=".OtpVerification">
+
+    <TextView
+        android:id="@+id/EnterVerifi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Verification Code"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:textStyle="italic"
+        />
+
+    <TextView
+        android:id="@+id/EnterOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EnterVerifi"
+        android:layout_marginTop="100dp"
+        android:text="ENTER OTP"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EnterOtp"
+        android:layout_marginTop="15dp"
+        android:text="We have sent a Otp On Your Mobile"
+        android:textSize="20dp"
+        android:textColor="#B2BEC5"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/OTPNumber"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+      android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape_button01"
+        android:layout_marginBottom="150dp"
+        android:hint="  OTP NUMBER"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/OtpBtn"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        app:cornerRadius="80dp"
+        android:text="SUBMIT"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        />
+</RelativeLayout>
